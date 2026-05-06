@@ -3,10 +3,15 @@ description: Privacy policy and terms of service for the LuPass iOS app.
 url: "https://brandon888.github.io"
 baseurl: "/lupass-legal"
 
-theme: jekyll-theme-minimal
-
+# No theme — using a custom layout in _layouts/default.html
 markdown: kramdown
 permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 exclude:
   - README.md
@@ -14,5 +19,3 @@ exclude:
   - Gemfile.lock
   - vendor/
   - .bundle/
-
-show_excerpts: false
